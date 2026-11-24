@@ -16,5 +16,8 @@ function filterGloss(q){
   });
 }
 document.addEventListener('keydown',function(e){if(e.key==='Enter'&&e.target.matches&&e.target.matches('[role=link]'))e.target.click();});
+(function(){var b=document.createElement('button');b.className='totop';b.setAttribute('aria-label','Back to top');b.innerHTML='&#8593;';b.onclick=function(){window.scrollTo({top:0,behavior:'smooth'})};
+function add(){if(!b.parentNode)document.body.appendChild(b)}if(document.body)add();else document.addEventListener('DOMContentLoaded',add);
+window.addEventListener('scroll',function(){b.classList.toggle('show',window.scrollY>700)},{passive:true});})();
 document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a.mailme');if(!a)return;
  e.preventDefault();location.href='mailto:'+a.dataset.u+'@'+a.dataset.d+'?subject='+encodeURIComponent('Feedback: '+document.title);});
