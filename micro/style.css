@@ -22,20 +22,25 @@
   nav.links a.active{background:var(--brand);color:#fff}
   main{max-width:980px;margin:0 auto;padding:32px 20px 80px}
   .hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#2c6b4e 0%,#1f5a44 62%,#1c4f3c 100%);
-        color:#fff;border-radius:18px;padding:42px 38px;box-shadow:var(--shadow);margin-bottom:34px}
+        color:#fff;border-radius:18px;padding:24px 30px 26px;box-shadow:var(--shadow);margin-bottom:22px}
   .hero .art{position:absolute;right:-12px;top:-8px;width:300px;height:230px;opacity:.14;pointer-events:none}
-  .hero h1{margin:0 0 10px;font-size:33px;line-height:1.12;letter-spacing:-.5px}
+  .hero h1{margin:0 0 6px;font-size:29px;line-height:1.12;letter-spacing:-.5px}
   .hero h1 .accent{color:#ffd98a}
-  .hero p{margin:0;max-width:640px;color:#e5f0ea;font-size:16px;position:relative}
+  .hero p{margin:0;max-width:680px;color:#e5f0ea;font-size:15px;position:relative}
   .hero .tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.7px;text-transform:uppercase;
              background:rgba(255,216,138,.17);color:#ffe0a3;border:1px solid rgba(255,216,138,.32);
-             padding:5px 13px;border-radius:999px;margin-bottom:14px;position:relative}
+             padding:3px 11px;border-radius:999px;margin-bottom:8px;font-size:11px;position:relative}
   .chooser{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--brand);
            border-radius:0 12px 12px 0;padding:12px 15px;margin:18px 0 4px}
   .chooser-label{font-family:var(--serif);font-weight:700;color:var(--brand-dark);font-size:17px;margin-bottom:9px}
   .chooser .picker{margin:0}
   .orient{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--brand);
           border-radius:0 14px 14px 0;padding:18px 20px;margin-bottom:28px}
+  .orient>summary{background:none!important;border:0!important;padding:0!important;margin:0!important}.orient>summary::before,.orient>summary::after{content:none!important}
+  .orient summary{cursor:pointer;list-style:none;display:flex;gap:12px;align-items:center;justify-content:space-between;font-size:15px}
+  .orient summary::-webkit-details-marker{display:none}
+  .orient .hint{font-size:13px;font-weight:600;color:var(--brand-dark);white-space:nowrap}
+  .orient{padding-top:12px!important;padding-bottom:12px!important}
   .orient-lead{font-size:15px;color:var(--ink);line-height:1.55;margin-bottom:14px}
   .map{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
   .map-item{display:block;background:var(--brand-soft);border:1.5px solid var(--brand);border-radius:10px;
